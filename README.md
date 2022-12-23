@@ -2,19 +2,15 @@
 &ensp; This repo implements the modified conditional restricted Boltzmann machines (M-CRBMs) model in paper *Modified Conditional Restricted Boltzmann Machines for Query
 Recommendation in Digital Archives*. The paper is in submitting progress.
 <br/><br/>
-  
-## Model Description  
-   a. model structure
-<br/><br/>
 
 ## Data  
    &ensp; Due to the huge size of the original training/test dataset, we only provide a small part of them in this repo.   
    &ensp; To protect user information, we do not provide real search keywords, but only the search keyword IDs in training/test dataset.
 <br/>
 
-   ### **Data Format**
-   41141 135218 1 36594 1 ...  
-   ID, idx, frequency, idx, frequency ...
+   ### **Data Files**
+   `dataset_train_<category>.npy`
+   `dataset_test_<category>.npy`
 <br/><br/>
 
 ## How to Use
@@ -31,8 +27,7 @@ conda env create -f environment.yml
 ```
 python train_crbm.py
 ```
-trained model is saved to `model.pth`
-all the metrics are saved to `metrics.csv`
+Trained models are saved to `model.pth`, and all the metrics are saved to `metrics.csv`
 <br/>
 
 ### **Set Parameter Values**
