@@ -9,7 +9,7 @@ Recommendation in Digital Archives*. The paper is in submitting progress.
 <br/>
 
    ### **Data Files**
-   `dataset_train_<category>.npy`
+   `dataset_train_<category>.npy`  
    `dataset_test_<category>.npy`
 <br/><br/>
 
